@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.para{
+    cursor:pointer;
+}
+/*
+relative 
+absolute
+static
+sticky
+fixed
+
+*/
+/* .container{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    position: relative;
+     /* top: 50px;
+    left: 100px; 
+    margin: 100px;
+}
+
+.child{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+}
+
+.btn{
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border: 1px solid rgb(12, 143, 18);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    position: fixed;
+    right: 0px;
+    top: 50%;
+} */
+
+.menu{
+    background-color: navy;
+    position: sticky;
+    top:0px;
+}
+.menu nav{
+
+}
+.menu nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu nav ul li{
+    list-style-type: none;
+   max-height: 60px;
+}
+.menu nav ul li:not(:last-child){
+    border-right: 1px solid rgb(100, 100, 119);
+}
+.menu nav ul li a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 50px;
+    margin: 0px 10px;
+}
+
+.menu nav ul li a:hover{
+    color:red;
+    padding: 21px 51px;
+}
+
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .left{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.content .right{
+    width: 900px;
+    height: 300px;
+    border:2px solid red;
+    margin: 20px;
+    padding: 20px;
+    overflow: scroll;
+}
