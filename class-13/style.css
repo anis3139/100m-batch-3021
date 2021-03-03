@@ -1,107 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.red{
+    color:red;
+    padding: 10px;
+    font-weight: bold;
 }
 
-.image img{
-    width: 100%;
-    height: auto;
-    padding: 100px;
+.bg-green{
+    background-color: green;
 }
 
-.responsive{
-    padding: 50px;
-    width: 400px;
-    height: 400px;
-    background-color: #f00;
-    margin: 0 auto;
+.bg-green{
+    background-color: green;
 }
-
-@media only screen and (min-width: 320px) {
-   .responsive{
-       background-color: #ff0;
-   }
-   .image img{
-        display: block;
-    }
-  
-}
-@media only screen and (min-width: 480px) {
-    .responsive{
-        background-color: blue;
-    }
-    .image img{
-        width: 100%;
-        height: auto;
-        padding: 30px;
-        }
-}
-@media only screen and (min-width: 720px) {
-    .responsive{
-        background-color: green;
-    }
-    .image img{
-        width: 100%;
-        height: auto;
-        padding: 100px;
-        }
-}
-@media only screen and (min-width: 1024px) {
-    .responsive{
-        background-color: #000;
-    }
-    .image img{
-        display: none;
-      }
-}
-@media only screen and (min-width: 1240px) {
-    .responsive{
-        display: none;
-    }
-
-    .image img{
-      display: none;
-    }
-}
-
-
-
-.parent{
-     display: flex; 
-}
-.parent .child{
-    width: 400px;
-    height: 500px;
-    margin: 20px;
-    background-color: #f00;
-    
-}
-
-
-@media (min-width: 320px) and (max-width: 480px) { 
-    .parent{
-        display: flex;
-        flex-direction: column; 
-   }
-
- }
-@media (min-width: 480px) and (max-width: 720px) { 
-    .parent{
-        display: flex;
-        flex-direction: column; 
-        color:#fff;
-   }
- }
-@media (min-width: 720px) and (max-width: 1024px) { 
-    .parent{
-        display: flex;
-        flex-direction: column; 
-   }
- }
-@media (min-width: 1024px) and (max-width: 1240px) { 
-    
- }
-@media (min-width: 1240px) and (max-width: 1800px) { 
-    
- }
